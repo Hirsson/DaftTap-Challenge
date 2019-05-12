@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26243C1722858FD10082BF48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26243C1622858FD10082BF48 /* AppDelegate.swift */; };
+		26243C1922858FD10082BF48 /* GameplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26243C1822858FD10082BF48 /* GameplayViewController.swift */; };
+		26243C1C22858FD10082BF48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26243C1A22858FD10082BF48 /* Main.storyboard */; };
+		26243C1E22858FD50082BF48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26243C1D22858FD50082BF48 /* Assets.xcassets */; };
+		26243C2122858FD50082BF48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26243C1F22858FD50082BF48 /* LaunchScreen.storyboard */; };
+		26243C2C22858FD50082BF48 /* Tap_Me__Tap_Me_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26243C2B22858FD50082BF48 /* Tap_Me__Tap_Me_Tests.swift */; };
+		26243C3722858FD50082BF48 /* Tap_Me__Tap_Me_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26243C3622858FD50082BF48 /* Tap_Me__Tap_Me_UITests.swift */; };
+		2651969C228817F100EF5FB5 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2651969B228817F100EF5FB5 /* UserDefaults.swift */; };
+		265F19482286BAA5001E5C84 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F19472286BAA5001E5C84 /* LeaderboardViewController.swift */; };
+		2672E80822889D3E00165B8F /* longerGnarl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2672E80522889D3D00165B8F /* longerGnarl.mp3 */; };
+		2672E80922889D3E00165B8F /* shorterGnarl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2672E80622889D3E00165B8F /* shorterGnarl.mp3 */; };
+		2672E80A22889D3E00165B8F /* singleBark.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2672E80722889D3E00165B8F /* singleBark.mp3 */; };
+		2672E80C2288A5F700165B8F /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672E80B2288A5F700165B8F /* SoundManager.swift */; };
+		2672E80E2288A79E00165B8F /* slideInScreen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2672E80D2288A79E00165B8F /* slideInScreen.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26243C2822858FD50082BF48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26243C0B22858FD10082BF48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26243C1222858FD10082BF48;
+			remoteInfo = "Tap Me! Tap Me!";
+		};
+		26243C3322858FD50082BF48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26243C0B22858FD10082BF48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26243C1222858FD10082BF48;
+			remoteInfo = "Tap Me! Tap Me!";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26243C1322858FD10082BF48 /* Tap Me! Tap Me!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap Me! Tap Me!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26243C1622858FD10082BF48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26243C1822858FD10082BF48 /* GameplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayViewController.swift; sourceTree = "<group>"; };
+		26243C1B22858FD10082BF48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26243C1D22858FD50082BF48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26243C2022858FD50082BF48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26243C2222858FD50082BF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26243C2722858FD50082BF48 /* Tap Me! Tap Me!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tap Me! Tap Me!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26243C2B22858FD50082BF48 /* Tap_Me__Tap_Me_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_Me__Tap_Me_Tests.swift; sourceTree = "<group>"; };
+		26243C2D22858FD50082BF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26243C3222858FD50082BF48 /* Tap Me! Tap Me!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tap Me! Tap Me!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26243C3622858FD50082BF48 /* Tap_Me__Tap_Me_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_Me__Tap_Me_UITests.swift; sourceTree = "<group>"; };
+		26243C3822858FD50082BF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2651969B228817F100EF5FB5 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		265F19472286BAA5001E5C84 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		2672E80522889D3D00165B8F /* longerGnarl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = longerGnarl.mp3; sourceTree = "<group>"; };
+		2672E80622889D3E00165B8F /* shorterGnarl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shorterGnarl.mp3; sourceTree = "<group>"; };
+		2672E80722889D3E00165B8F /* singleBark.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = singleBark.mp3; sourceTree = "<group>"; };
+		2672E80B2288A5F700165B8F /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		2672E80D2288A79E00165B8F /* slideInScreen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = slideInScreen.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26243C1022858FD10082BF48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26243C2422858FD50082BF48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26243C2F22858FD50082BF48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26243C0A22858FD10082BF48 = {
+			isa = PBXGroup;
+			children = (
+				26243C1522858FD10082BF48 /* Tap Me! Tap Me! */,
+				26243C2A22858FD50082BF48 /* Tap Me! Tap Me!Tests */,
+				26243C3522858FD50082BF48 /* Tap Me! Tap Me!UITests */,
+				26243C1422858FD10082BF48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26243C1422858FD10082BF48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26243C1322858FD10082BF48 /* Tap Me! Tap Me!.app */,
+				26243C2722858FD50082BF48 /* Tap Me! Tap Me!Tests.xctest */,
+				26243C3222858FD50082BF48 /* Tap Me! Tap Me!UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26243C1522858FD10082BF48 /* Tap Me! Tap Me! */ = {
+			isa = PBXGroup;
+			children = (
+				2672E80422889CF700165B8F /* Sounds */,
+				26243C1622858FD10082BF48 /* AppDelegate.swift */,
+				2651969B228817F100EF5FB5 /* UserDefaults.swift */,
+				265F19472286BAA5001E5C84 /* LeaderboardViewController.swift */,
+				26243C1822858FD10082BF48 /* GameplayViewController.swift */,
+				2672E80B2288A5F700165B8F /* SoundManager.swift */,
+				26243C1A22858FD10082BF48 /* Main.storyboard */,
+				26243C1D22858FD50082BF48 /* Assets.xcassets */,
+				26243C1F22858FD50082BF48 /* LaunchScreen.storyboard */,
+				26243C2222858FD50082BF48 /* Info.plist */,
+			);
+			path = "Tap Me! Tap Me!";
+			sourceTree = "<group>";
+		};
+		26243C2A22858FD50082BF48 /* Tap Me! Tap Me!Tests */ = {
+			isa = PBXGroup;
+			children = (
+				26243C2B22858FD50082BF48 /* Tap_Me__Tap_Me_Tests.swift */,
+				26243C2D22858FD50082BF48 /* Info.plist */,
+			);
+			path = "Tap Me! Tap Me!Tests";
+			sourceTree = "<group>";
+		};
+		26243C3522858FD50082BF48 /* Tap Me! Tap Me!UITests */ = {
+			isa = PBXGroup;
+			children = (
+				26243C3622858FD50082BF48 /* Tap_Me__Tap_Me_UITests.swift */,
+				26243C3822858FD50082BF48 /* Info.plist */,
+			);
+			path = "Tap Me! Tap Me!UITests";
+			sourceTree = "<group>";
+		};
+		2672E80422889CF700165B8F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2672E80622889D3E00165B8F /* shorterGnarl.mp3 */,
+				2672E80522889D3D00165B8F /* longerGnarl.mp3 */,
+				2672E80722889D3E00165B8F /* singleBark.mp3 */,
+				2672E80D2288A79E00165B8F /* slideInScreen.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26243C1222858FD10082BF48 /* Tap Me! Tap Me! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26243C3B22858FD50082BF48 /* Build configuration list for PBXNativeTarget "Tap Me! Tap Me!" */;
+			buildPhases = (
+				26243C0F22858FD10082BF48 /* Sources */,
+				26243C1022858FD10082BF48 /* Frameworks */,
+				26243C1122858FD10082BF48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tap Me! Tap Me!";
+			productName = "Tap Me! Tap Me!";
+			productReference = 26243C1322858FD10082BF48 /* Tap Me! Tap Me!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26243C2622858FD50082BF48 /* Tap Me! Tap Me!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26243C3E22858FD50082BF48 /* Build configuration list for PBXNativeTarget "Tap Me! Tap Me!Tests" */;
+			buildPhases = (
+				26243C2322858FD50082BF48 /* Sources */,
+				26243C2422858FD50082BF48 /* Frameworks */,
+				26243C2522858FD50082BF48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26243C2922858FD50082BF48 /* PBXTargetDependency */,
+			);
+			name = "Tap Me! Tap Me!Tests";
+			productName = "Tap Me! Tap Me!Tests";
+			productReference = 26243C2722858FD50082BF48 /* Tap Me! Tap Me!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26243C3122858FD50082BF48 /* Tap Me! Tap Me!UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26243C4122858FD50082BF48 /* Build configuration list for PBXNativeTarget "Tap Me! Tap Me!UITests" */;
+			buildPhases = (
+				26243C2E22858FD50082BF48 /* Sources */,
+				26243C2F22858FD50082BF48 /* Frameworks */,
+				26243C3022858FD50082BF48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26243C3422858FD50082BF48 /* PBXTargetDependency */,
+			);
+			name = "Tap Me! Tap Me!UITests";
+			productName = "Tap Me! Tap Me!UITests";
+			productReference = 26243C3222858FD50082BF48 /* Tap Me! Tap Me!UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26243C0B22858FD10082BF48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Axel Hirszson";
+				TargetAttributes = {
+					26243C1222858FD10082BF48 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					26243C2622858FD50082BF48 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 26243C1222858FD10082BF48;
+					};
+					26243C3122858FD50082BF48 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 26243C1222858FD10082BF48;
+					};
+				};
+			};
+			buildConfigurationList = 26243C0E22858FD10082BF48 /* Build configuration list for PBXProject "Tap Me! Tap Me!" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26243C0A22858FD10082BF48;
+			productRefGroup = 26243C1422858FD10082BF48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26243C1222858FD10082BF48 /* Tap Me! Tap Me! */,
+				26243C2622858FD50082BF48 /* Tap Me! Tap Me!Tests */,
+				26243C3122858FD50082BF48 /* Tap Me! Tap Me!UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26243C1122858FD10082BF48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2672E80822889D3E00165B8F /* longerGnarl.mp3 in Resources */,
+				2672E80922889D3E00165B8F /* shorterGnarl.mp3 in Resources */,
+				26243C2122858FD50082BF48 /* LaunchScreen.storyboard in Resources */,
+				2672E80E2288A79E00165B8F /* slideInScreen.wav in Resources */,
+				26243C1E22858FD50082BF48 /* Assets.xcassets in Resources */,
+				2672E80A22889D3E00165B8F /* singleBark.mp3 in Resources */,
+				26243C1C22858FD10082BF48 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26243C2522858FD50082BF48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26243C3022858FD50082BF48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26243C0F22858FD10082BF48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2651969C228817F100EF5FB5 /* UserDefaults.swift in Sources */,
+				26243C1922858FD10082BF48 /* GameplayViewController.swift in Sources */,
+				26243C1722858FD10082BF48 /* AppDelegate.swift in Sources */,
+				265F19482286BAA5001E5C84 /* LeaderboardViewController.swift in Sources */,
+				2672E80C2288A5F700165B8F /* SoundManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26243C2322858FD50082BF48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26243C2C22858FD50082BF48 /* Tap_Me__Tap_Me_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26243C2E22858FD50082BF48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26243C3722858FD50082BF48 /* Tap_Me__Tap_Me_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26243C2922858FD50082BF48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26243C1222858FD10082BF48 /* Tap Me! Tap Me! */;
+			targetProxy = 26243C2822858FD50082BF48 /* PBXContainerItemProxy */;
+		};
+		26243C3422858FD50082BF48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26243C1222858FD10082BF48 /* Tap Me! Tap Me! */;
+			targetProxy = 26243C3322858FD50082BF48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26243C1A22858FD10082BF48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26243C1B22858FD10082BF48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26243C1F22858FD50082BF48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26243C2022858FD50082BF48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26243C3922858FD50082BF48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26243C3A22858FD50082BF48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26243C3C22858FD50082BF48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4RK99SRVT;
+				INFOPLIST_FILE = "Tap Me! Tap Me!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AxelHirszson.Tap-Me--Tap-Me-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26243C3D22858FD50082BF48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4RK99SRVT;
+				INFOPLIST_FILE = "Tap Me! Tap Me!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AxelHirszson.Tap-Me--Tap-Me-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		26243C3F22858FD50082BF48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4RK99SRVT;
+				INFOPLIST_FILE = "Tap Me! Tap Me!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AxelHirszson.Tap-Me--Tap-Me-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tap Me! Tap Me!.app/Tap Me! Tap Me!";
+			};
+			name = Debug;
+		};
+		26243C4022858FD50082BF48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4RK99SRVT;
+				INFOPLIST_FILE = "Tap Me! Tap Me!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AxelHirszson.Tap-Me--Tap-Me-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tap Me! Tap Me!.app/Tap Me! Tap Me!";
+			};
+			name = Release;
+		};
+		26243C4222858FD50082BF48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4RK99SRVT;
+				INFOPLIST_FILE = "Tap Me! Tap Me!UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AxelHirszson.Tap-Me--Tap-Me-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tap Me! Tap Me!";
+			};
+			name = Debug;
+		};
+		26243C4322858FD50082BF48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4RK99SRVT;
+				INFOPLIST_FILE = "Tap Me! Tap Me!UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AxelHirszson.Tap-Me--Tap-Me-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tap Me! Tap Me!";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26243C0E22858FD10082BF48 /* Build configuration list for PBXProject "Tap Me! Tap Me!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26243C3922858FD50082BF48 /* Debug */,
+				26243C3A22858FD50082BF48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26243C3B22858FD50082BF48 /* Build configuration list for PBXNativeTarget "Tap Me! Tap Me!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26243C3C22858FD50082BF48 /* Debug */,
+				26243C3D22858FD50082BF48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26243C3E22858FD50082BF48 /* Build configuration list for PBXNativeTarget "Tap Me! Tap Me!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26243C3F22858FD50082BF48 /* Debug */,
+				26243C4022858FD50082BF48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26243C4122858FD50082BF48 /* Build configuration list for PBXNativeTarget "Tap Me! Tap Me!UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26243C4222858FD50082BF48 /* Debug */,
+				26243C4322858FD50082BF48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26243C0B22858FD10082BF48 /* Project object */;
+}
