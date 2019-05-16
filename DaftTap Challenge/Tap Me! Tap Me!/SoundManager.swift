@@ -27,7 +27,7 @@ class SoundManager {
         var soundFilename = ""
         
 
-        // And set appropriate filename
+        // Set appropriate filename
         switch effect {
             
         case .singleBark:

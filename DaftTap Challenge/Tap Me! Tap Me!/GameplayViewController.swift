@@ -27,6 +27,7 @@ class GameplayViewController: UIViewController, GameplayViewControllerProtocol {
     
     @IBOutlet weak var scoreLabel: UILabel!
     
+    @IBOutlet weak var patDoggy: UIButton!
     
     var delegate:GameplayViewControllerProtocol?
     
@@ -44,6 +45,11 @@ class GameplayViewController: UIViewController, GameplayViewControllerProtocol {
         //scoreLabel.layer.borderColor = UIColor.black.cgColor
         //scoreLabel.layer.borderWidth = 2.0
         //scoreLabel.layer.cornerRadius = 10.0
+        
+        // playGame button look
+        patDoggy.layer.borderColor = UIColor.black.cgColor
+        patDoggy.layer.borderWidth = 0.2
+        patDoggy.layer.cornerRadius = 10.0
         
         // Create Timer
         timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(subtractTime), userInfo: nil, repeats: true)
@@ -86,11 +92,14 @@ class GameplayViewController: UIViewController, GameplayViewControllerProtocol {
             
             
             
-            // Show results messaging
+            // Show results summary
             let alert = UIAlertController(title: "ULALA !", message: "You have patted doggy \(score) times! Doggy is very happy.", preferredStyle: .alert)
-            //let alert = UIAlertController(title: "Game Over", message: "You have scored \(score) points.", preferredStyle: .actionSheet)
+            // let alert = UIAlertController(title: "Game Over", message: "You have scored \(score) points.", preferredStyle: .actionSheet)
             
             let action = UIAlertAction(title: "See leaderboard", style: .default, handler: { (action) in
+                
+                // Play sound at action tap
+                SoundManager.playSound(.singleBark)
                 
                 // Dismiss present view controller
                 self.dismiss(animated: true, completion: nil)
@@ -100,6 +109,9 @@ class GameplayViewController: UIViewController, GameplayViewControllerProtocol {
             alert.addAction(action)
             present(alert, animated: true, completion: nil)
             
+            // TODO: Save results
+          
+            
         }
     }
     
@@ -107,7 +119,7 @@ class GameplayViewController: UIViewController, GameplayViewControllerProtocol {
     @IBAction func buttonTapped(_ sender: UIButton) {
         
         score = score + 1
-        scoreLabel.text = "Score\n \(score)"
+        scoreLabel.text = "Times Patted\n \(score)"
         
         // MARK: Play sound at tap
         SoundManager.playSound(.singleBark)
